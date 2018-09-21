@@ -10,6 +10,8 @@ Branches and releases:
 
  - [6.16.5](https://github.com/ExodusMovement/docker-digibyted/tree/6.16.5)
    - [6.16.5-001](https://github.com/ExodusMovement/docker-digibyted/tree/6.16.5-001)
+ - [6.16.3](https://github.com/ExodusMovement/docker-digibyted/tree/6.16.3)
+   - [6.16.3-001](https://github.com/ExodusMovement/docker-digibyted/tree/6.16.3-001)
 
 ## Usage
 
