@@ -40,15 +40,15 @@ RUN strip src/digibyted src/digibyte-cli
 
 FROM ubuntu:18.04
 
-RUN apt update
-RUN apt install -y \
-  libboost-system-dev \
-  libboost-filesystem-dev \
-  libboost-chrono-dev \
-  libboost-test-dev \
-  libboost-thread-dev \
-  openssl \
-  libevent-dev
+RUN apt update \
+  && apt install -y \
+    libboost-system-dev \
+    libboost-filesystem-dev \
+    libboost-chrono-dev \
+    libboost-thread-dev \
+    openssl \
+    libevent-dev \
+  && rm -rf /var/lib/apt/lists/*
 
 COPY --from=builder /digibyte/src/digibyted /digibyte/src/digibyte-cli /usr/local/bin/
 
